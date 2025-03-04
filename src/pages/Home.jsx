@@ -14,8 +14,8 @@ export const Home = () => {
         setLoading(true);
 
         try{
-            const result = await fetch(API_URL);
-            const data = await result.json();
+            const response = await fetch(API_URL);
+            const data = await response.json();
 
             setPosts(data);
         }
